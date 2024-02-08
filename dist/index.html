@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>SaaS Landing Page</title>
+    <meta content="Saas Landing page" name="description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Theme favicon -->
+    <link rel="shortcut icon" href="/assets/favicon-crsEsiPV.ico" />
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script type="module" crossorigin src="/assets/index-Tn7NgRCn.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-vLKJ2z4N.css">
+</head>
+
+<body class="font-mono">
+<div
+  id="navbar-wrapper"
+  class="sticky top-0 z-10 border-b bg-base-100 lg:bg-opacity-95 lg:backdrop-blur-sm"
+  x-data="{ atTop: false }"
+  :class="{ 'border-base-content/10': atTop, 'border-transparent': !atTop}"
+  @scroll.window="atTop = (window.pageYOffset < 30) ? false: true">
+  <div class="container">
+    <nav class="navbar px-0">
+      <div class="navbar-start gap-2">
+        <div class="flex-none lg:hidden">
+          <label for="my-drawer" id="my-drawer-trigger" aria-label="open sidebar" class="btn btn-square btn-ghost">
+            <i class="icon-menu inline-block text-xl"></i>
+          </label>
+        </div>
+
+        <!-- Navbar Brand logo -->
+        <a href="#" class="text-xl font-bold tracking-tighter">SaaS Landing</a>
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal menu-sm gap-2 px-1">
+          <li class="font-medium"><a href="#home">Home</a></li>
+          <li class="font-medium"><a href="#features">Features</a></li>
+          <li class="font-medium"><a href="#integrations">Integrations</a></li>
+          <li class="font-medium"><a href="#pricing">Pricing</a></li>
+          <li class="font-medium"><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end gap-3">
+        <a class="btn btn-ghost btn-sm" href="https://platform.shapeblock.com/accounts/signup/">Register</a>
+        <a class="btn btn-primary btn-sm" href="https://platform.shapeblock.com/accounts/login/">Login</a>
+      </div>
+    </nav>
+
+    <!-- sm screen menu (drawer) -->
+    <div class="drawer">
+      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-side">
+        <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+
+        <ul class="menu min-h-full w-80 gap-2 bg-base-100 p-4 text-base-content">
+          <!-- Navbar Brand logo -->
+          <li class="font-medium">
+            <a href="index.html" class="text-xl font-bold">SaaS Landing</a>
+          </li>
+
+          <li class="font-medium"><a href="#home">Home</a></li>
+          <li class="font-medium"><a href="#features">Features</a></li>
+          <li class="font-medium"><a href="#integrations">Integrations</a></li>
+          <li class="font-medium"><a href="#pricing">Pricing</a></li>
+          <li class="font-medium"><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="py-8 lg:py-20  " id="home">
+    <div class="container">
+        <div class="grid gap-12 lg:grid-cols-2">
+            <div>
+                <h1 class="text-4xl font-black tracking-tighter lg:text-6xl lg:leading-none">
+                    Revolutionize your business with our
+                    <span class="text-primary">dynamic SaaS</span>
+                    solutions.
+                </h1>
+                <p class="mt-8 text-lg">
+                    Elevate your business to new heights with our cutting-edge SaaS solutions. Seamlessly
+                    integrate powerful features, flexible pricing, and dedicated support.
+                </p>
+                <div class="mt-16 inline-flex gap-3">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-ghost">Learn More</button>
+                </div>
+            </div>
+
+            <div>
+                <div
+                        class="rounded-2xl bg-gradient-to-r from-indigo-200 via-red-200 to-purple-300 p-3"
+                        data-card3d=""
+                        data-card3d-perspective="1000"
+                        data-card3d-full-page-listening="true">
+                    <img
+                            alt="SaaS"
+                            class="rounded-lg"
+                            src="/assets/21478246-Omoi-Customer-Relationship-Management-Dashboard-PmtaOon9.png"/>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-12 text-center text-2xl font-semibold text-base-content/60 lg:mt-32">
+            Our Partners
+        </h2>
+
+        <div class="mt-12 grid grid-cols-2 justify-center gap-8 sm:grid-cols-3 md:grid-cols-5">
+            <img
+                    class="mx-auto h-8 cursor-pointer grayscale transition-all duration-500 hover:grayscale-0"
+                    src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20272%2092'%20width='272'%20height='92'%3e%3cpath%20fill='%23EA4335'%20d='M115.75%2047.18c0%2012.77-9.99%2022.18-22.25%2022.18s-22.25-9.41-22.25-22.18C71.25%2034.32%2081.24%2025%2093.5%2025s22.25%209.32%2022.25%2022.18zm-9.74%200c0-7.98-5.79-13.44-12.51-13.44S80.99%2039.2%2080.99%2047.18c0%207.9%205.79%2013.44%2012.51%2013.44s12.51-5.55%2012.51-13.44z'/%3e%3cpath%20fill='%23FBBC05'%20d='M163.75%2047.18c0%2012.77-9.99%2022.18-22.25%2022.18s-22.25-9.41-22.25-22.18c0-12.85%209.99-22.18%2022.25-22.18s22.25%209.32%2022.25%2022.18zm-9.74%200c0-7.98-5.79-13.44-12.51-13.44s-12.51%205.46-12.51%2013.44c0%207.9%205.79%2013.44%2012.51%2013.44s12.51-5.55%2012.51-13.44z'/%3e%3cpath%20fill='%234285F4'%20d='M209.75%2026.34v39.82c0%2016.38-9.66%2023.07-21.08%2023.07-10.75%200-17.22-7.19-19.66-13.07l8.48-3.53c1.51%203.61%205.21%207.87%2011.17%207.87%207.31%200%2011.84-4.51%2011.84-13v-3.19h-.34c-2.18%202.69-6.38%205.04-11.68%205.04-11.09%200-21.25-9.66-21.25-22.09%200-12.52%2010.16-22.26%2021.25-22.26%205.29%200%209.49%202.35%2011.68%204.96h.34v-3.61h9.25zm-8.56%2020.92c0-7.81-5.21-13.52-11.84-13.52-6.72%200-12.35%205.71-12.35%2013.52%200%207.73%205.63%2013.36%2012.35%2013.36%206.63%200%2011.84-5.63%2011.84-13.36z'/%3e%3cpath%20fill='%2334A853'%20d='M225%203v65h-9.5V3h9.5z'/%3e%3cpath%20fill='%23EA4335'%20d='M262.02%2054.48l7.56%205.04c-2.44%203.61-8.32%209.83-18.48%209.83-12.6%200-22.01-9.74-22.01-22.18%200-13.19%209.49-22.18%2020.92-22.18%2011.51%200%2017.14%209.16%2018.98%2014.11l1.01%202.52-29.65%2012.28c2.27%204.45%205.8%206.72%2010.75%206.72%204.96%200%208.4-2.44%2010.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95%200-11.84%204.37-11.59%2012.93z'/%3e%3cpath%20fill='%234285F4'%20d='M35.29%2041.41V32H67c.31%201.64.47%203.58.47%205.68%200%207.06-1.93%2015.79-8.15%2022.01-6.05%206.3-13.78%209.66-24.02%209.66C16.32%2069.35.36%2053.89.36%2034.91.36%2015.93%2016.32.47%2035.3.47c10.5%200%2017.98%204.12%2023.6%209.49l-6.64%206.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86%200-24.7%2011.17-24.7%2025.03%200%2013.86%2010.84%2025.03%2024.7%2025.03%208.99%200%2014.11-3.61%2017.39-6.89%202.66-2.66%204.41-6.46%205.1-11.65l-22.49.01z'/%3e%3c/svg%3e"
+                    alt="google logo"/>
+            <img
+                    class="mx-auto h-6 cursor-pointer grayscale transition-all duration-500 hover:grayscale-0"
+                    src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20337.6%2072'%3e%3cpath%20fill='%23737373'%20d='M140.4,14.4v43.2h-7.5V23.7h-0.1l-13.4,33.9h-5l-13.7-33.9h-0.1v33.9h-6.9V14.4h10.8l12.4,32h0.2l13.1-32H140.4%20z%20M146.6,17.7c0-1.2,0.4-2.2,1.3-3c0.9-0.8,1.9-1.2,3.1-1.2c1.3,0,2.4,0.4,3.2,1.2s1.3,1.8,1.3,3c0,1.2-0.4,2.2-1.3,3%20c-0.9,0.8-1.9,1.2-3.2,1.2s-2.3-0.4-3.1-1.2C147.1,19.8,146.6,18.8,146.6,17.7z%20M154.7,26.6v31h-7.3v-31H154.7z%20M176.8,52.3%20c1.1,0,2.3-0.2,3.6-0.8c1.3-0.5,2.5-1.2,3.6-2v6.8c-1.2,0.7-2.5,1.2-4,1.5c-1.5,0.3-3.1,0.5-4.9,0.5c-4.6,0-8.3-1.4-11.1-4.3%20c-2.9-2.9-4.3-6.6-4.3-11c0-5,1.5-9.1,4.4-12.3c2.9-3.2,7-4.8,12.4-4.8c1.4,0,2.8,0.2,4.1,0.5c1.4,0.3,2.5,0.8,3.3,1.2v7%20c-1.1-0.8-2.3-1.5-3.4-1.9c-1.2-0.4-2.4-0.7-3.6-0.7c-2.9,0-5.2,0.9-7,2.8s-2.6,4.4-2.6,7.6c0,3.1,0.9,5.6,2.6,7.3%20C171.6,51.4,173.9,52.3,176.8,52.3z%20M204.7,26.1c0.6,0,1.1,0,1.6,0.1s0.9,0.2,1.2,0.3v7.4c-0.4-0.3-0.9-0.6-1.7-0.8%20s-1.6-0.4-2.7-0.4c-1.8,0-3.3,0.8-4.5,2.3s-1.9,3.8-1.9,7v15.6h-7.3v-31h7.3v4.9h0.1c0.7-1.7,1.7-3,3-4%20C201.2,26.6,202.8,26.1,204.7,26.1z%20M207.9,42.6c0-5.1,1.5-9.2,4.3-12.2c2.9-3,6.9-4.5,12-4.5c4.8,0,8.6,1.4,11.3,4.3%20s4.1,6.8,4.1,11.7c0,5-1.5,9-4.3,12c-2.9,3-6.8,4.5-11.8,4.5c-4.8,0-8.6-1.4-11.4-4.2C209.3,51.3,207.9,47.4,207.9,42.6z%20M215.5,42.3c0,3.2,0.7,5.7,2.2,7.4s3.6,2.6,6.3,2.6c2.6,0,4.7-0.8,6.1-2.6c1.4-1.7,2.1-4.2,2.1-7.6c0-3.3-0.7-5.8-2.1-7.6%20c-1.4-1.7-3.5-2.6-6-2.6c-2.7,0-4.7,0.9-6.2,2.7C216.2,36.5,215.5,39,215.5,42.3z%20M250.5,34.8c0,1,0.3,1.9,1,2.5%20c0.7,0.6,2.1,1.3,4.4,2.2c2.9,1.2,5,2.5,6.1,3.9c1.2,1.5,1.8,3.2,1.8,5.3c0,2.9-1.1,5.2-3.4,7c-2.2,1.8-5.3,2.6-9.1,2.6%20c-1.3,0-2.7-0.2-4.3-0.5c-1.6-0.3-2.9-0.7-4-1.2v-7.2c1.3,0.9,2.8,1.7,4.3,2.2c1.5,0.5,2.9,0.8,4.2,0.8c1.6,0,2.9-0.2,3.6-0.7%20c0.8-0.5,1.2-1.2,1.2-2.3c0-1-0.4-1.8-1.2-2.6c-0.8-0.7-2.4-1.5-4.6-2.4c-2.7-1.1-4.6-2.4-5.7-3.8s-1.7-3.2-1.7-5.4%20c0-2.8,1.1-5.1,3.3-6.9c2.2-1.8,5.1-2.7,8.6-2.7c1.1,0,2.3,0.1,3.6,0.4s2.5,0.6,3.4,0.9V34c-1-0.6-2.1-1.2-3.4-1.7%20c-1.3-0.5-2.6-0.7-3.8-0.7c-1.4,0-2.5,0.3-3.2,0.8C250.9,33.1,250.5,33.8,250.5,34.8z%20M266.9,42.6c0-5.1,1.5-9.2,4.3-12.2%20c2.9-3,6.9-4.5,12-4.5c4.8,0,8.6,1.4,11.3,4.3s4.1,6.8,4.1,11.7c0,5-1.5,9-4.3,12c-2.9,3-6.8,4.5-11.8,4.5c-4.8,0-8.6-1.4-11.4-4.2%20C268.4,51.3,266.9,47.4,266.9,42.6z%20M274.5,42.3c0,3.2,0.7,5.7,2.2,7.4s3.6,2.6,6.3,2.6c2.6,0,4.7-0.8,6.1-2.6%20c1.4-1.7,2.1-4.2,2.1-7.6c0-3.3-0.7-5.8-2.1-7.6c-1.4-1.7-3.5-2.6-6-2.6c-2.7,0-4.7,0.9-6.2,2.7C275.3,36.5,274.5,39,274.5,42.3z%20M322.9,32.6h-10.9v25h-7.4v-25h-5.2v-6h5.2v-4.3c0-3.2,1.1-5.9,3.2-8s4.8-3.1,8.1-3.1c0.9,0,1.7,0.1,2.4,0.1s1.3,0.2,1.8,0.4v6.3%20c-0.2-0.1-0.7-0.3-1.3-0.5c-0.6-0.2-1.3-0.3-2.1-0.3c-1.5,0-2.7,0.5-3.5,1.4c-0.8,0.9-1.2,2.4-1.2,4.2v3.7h10.9v-7l7.3-2.2v9.2h7.4%20v6h-7.4v14.5c0,1.9,0.4,3.2,1,4c0.7,0.8,1.8,1.2,3.3,1.2c0.4,0,0.9-0.1,1.5-0.3c0.6-0.2,1.1-0.4,1.5-0.7v6c-0.5,0.3-1.2,0.5-2.3,0.7%20c-1.1,0.2-2.1,0.3-3.2,0.3c-3.1,0-5.4-0.8-6.9-2.4c-1.5-1.6-2.3-4.1-2.3-7.4L322.9,32.6L322.9,32.6z'/%3e%3crect%20fill='%23F25022'%20width='34.2'%20height='34.2'/%3e%3crect%20x='37.8'%20fill='%237FBA00'%20width='34.2'%20height='34.2'/%3e%3crect%20y='37.8'%20fill='%2300A4EF'%20width='34.2'%20height='34.2'/%3e%3crect%20x='37.8'%20y='37.8'%20fill='%23FFB900'%20width='34.2'%20height='34.2'/%3e%3c/svg%3e"
+                    alt="microsoft logo"/>
+            <img
+                    class="mx-auto hidden h-6 cursor-pointer grayscale transition-all duration-500 hover:grayscale-0 md:inline"
+                    src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1024'%20height='276.742'%20viewBox='0%200%201024%20276.742'%3e%3cpath%20d='M140.803%20258.904c-15.404%202.705-31.079%203.516-47.294%205.676l-49.458-144.856v151.073c-15.404%201.621-29.457%203.783-44.051%205.945v-276.742h41.08l56.212%20157.021v-157.021h43.511v258.904zm85.131-157.558c16.757%200%2042.431-.811%2057.835-.811v43.24c-19.189%200-41.619%200-57.835.811v64.322c25.405-1.621%2050.809-3.785%2076.482-4.596v41.617l-119.724%209.461v-255.39h119.724v43.241h-76.482v58.105zm237.284-58.104h-44.862v198.908c-14.594%200-29.188%200-43.239.539v-199.447h-44.862v-43.242h132.965l-.002%2043.242zm70.266%2055.132h59.187v43.24h-59.187v98.104h-42.433v-239.718h120.808v43.241h-78.375v55.133zm148.641%20103.507c24.594.539%2049.456%202.434%2073.51%203.783v42.701c-38.646-2.434-77.293-4.863-116.75-5.676v-242.689h43.24v201.881zm109.994%2049.457c13.783.812%2028.377%201.623%2042.43%203.242v-254.58h-42.43v251.338zm231.881-251.338l-54.863%20131.615%2054.863%20145.127c-16.217-2.162-32.432-5.135-48.648-7.838l-31.078-79.994-31.617%2073.51c-15.678-2.705-30.812-3.516-46.484-5.678l55.672-126.75-50.269-129.992h46.482l28.377%2072.699%2030.27-72.699h47.295z'%20fill='%23d81f26'/%3e%3c/svg%3e"
+                    alt="netflix logo"/>
+            <img
+                    class="mx-auto hidden h-8 cursor-pointer grayscale transition-all duration-500 hover:grayscale-0 md:inline"
+                    src="/assets/spotify-BzzVZTkb.svg"
+                    alt="spotify logo"/>
+            <img
+                    class="mx-auto hidden h-8 cursor-pointer grayscale transition-all duration-500 hover:grayscale-0 sm:inline"
+                    src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1280'%20height='339.345'%20viewBox='0%200%20338.667%2089.785'%20xmlns:v='https://vecta.io/nano'%3e%3cg%20transform='translate(936.898%20-21.779)'%3e%3cpath%20clip-path='none'%20d='M-828.604%2039.734c-.697%200-1.289.506-1.398%201.195l-8.068%2051.165a1.31%201.31%200%200%200%201.294%201.513h9.568c.696%200%201.289-.507%201.398-1.195l2.37-15.025c.108-.688.701-1.195%201.398-1.195h8.699c10.164%200%2018.792-7.416%2020.368-17.465%201.589-10.134-6.328-18.971-17.549-18.993zm9.301%2011.422h6.96c5.73%200%207.596%203.381%207.006%207.12-.59%203.747-3.488%206.507-9.031%206.507h-7.084zm45.788%203.478c-2.416.009-5.196.504-8.317%201.804-7.159%202.984-10.597%209.151-12.057%2013.647%200%200-4.647%2013.717%205.852%2021.253%200%200%209.737%207.255%2020.698-.447l-.189%201.203a1.31%201.31%200%200%200%201.292%201.513h9.083c.697%200%201.289-.507%201.398-1.195l5.525-35.038a1.31%201.31%200%200%200-1.292-1.515h-9.083c-.697%200-1.29.507-1.398%201.195l-.297%201.886s-3.967-4.333-11.216-4.306zm.297%2011.067c1.043%200%201.997.144%202.853.419%203.919%201.258%206.141%205.023%205.498%209.104-.793%205.025-4.914%208.725-10.199%208.725-1.042%200-1.996-.143-2.853-.418-3.918-1.258-6.154-5.023-5.511-9.104.793-5.025%204.927-8.727%2010.212-8.727z'%20fill='%23003087'/%3e%3cpath%20clip-path='none'%20d='M-697.804%2039.734c-.697%200-1.289.506-1.398%201.195l-8.068%2051.165a1.31%201.31%200%200%200%201.294%201.513h9.568c.696%200%201.289-.507%201.398-1.195l2.37-15.025c.108-.688.701-1.195%201.398-1.195h8.699c10.164%200%2018.791-7.416%2020.366-17.465%201.59-10.134-6.326-18.971-17.547-18.993zm9.301%2011.422h6.96c5.73%200%207.596%203.381%207.006%207.12-.59%203.747-3.487%206.507-9.031%206.507h-7.084zm45.787%203.478c-2.416.009-5.196.504-8.317%201.804-7.159%202.984-10.597%209.151-12.057%2013.647%200%200-4.645%2013.717%205.854%2021.253%200%200%209.735%207.255%2020.697-.447l-.189%201.203a1.31%201.31%200%200%200%201.294%201.513h9.082c.697%200%201.289-.507%201.398-1.195l5.527-35.038a1.31%201.31%200%200%200-1.294-1.515h-9.083c-.697%200-1.29.507-1.398%201.195l-.297%201.886s-3.967-4.333-11.216-4.306zm.297%2011.067c1.043%200%201.997.144%202.853.419%203.919%201.258%206.141%205.023%205.498%209.104-.793%205.025-4.914%208.725-10.199%208.725-1.042%200-1.996-.143-2.853-.418-3.918-1.258-6.154-5.023-5.511-9.104.793-5.025%204.927-8.727%2010.212-8.727z'%20fill='%230070e0'/%3e%3cpath%20clip-path='none'%20d='M-745.92%2055.859c-.72%200-1.232.703-1.012%201.388l9.958%2030.901-9.004%2014.562c-.437.707.071%201.62.902%201.62h10.642a1.77%201.77%200%200%200%201.513-.854l27.811-46.007c.427-.707-.083-1.611-.909-1.611h-10.641a1.77%201.77%200%200%200-1.522.869l-10.947%2018.482-5.557-18.345c-.181-.597-.732-1.006-1.355-1.006z'%20fill='%23003087'/%3e%3cpath%20clip-path='none'%20d='M-609.107%2039.734c-.696%200-1.289.507-1.398%201.195l-8.07%2051.163a1.31%201.31%200%200%200%201.294%201.515h9.568c.696%200%201.289-.507%201.398-1.195l8.068-51.165a1.31%201.31%200%200%200-1.292-1.513z'%20fill='%230070e0'/%3e%3cpath%20clip-path='none'%20d='M-908.37%2039.734a2.59%202.59%200%200%200-2.556%202.185l-4.247%2026.936c.198-1.258%201.282-2.185%202.556-2.185h12.445c12.525%200%2023.153-9.137%2025.095-21.519a20.76%2020.76%200%200%200%20.245-2.793c-3.183-1.669-6.922-2.624-11.019-2.624z'%20fill='%23001c64'/%3e%3cpath%20clip-path='none'%20d='M-874.832%2042.359a20.76%2020.76%200%200%201-.245%202.793c-1.942%2012.382-12.571%2021.519-25.095%2021.519h-12.445c-1.273%200-2.358.926-2.556%202.185l-3.905%2024.752-2.446%2015.528a2.1%202.1%200%200%200%202.075%202.43h13.508a2.59%202.59%200%200%200%202.556-2.185l3.558-22.567a2.59%202.59%200%200%201%202.558-2.185h7.953c12.525%200%2023.153-9.137%2025.095-21.519%201.379-8.788-3.047-16.784-10.611-20.75z'%20fill='%230070e0'/%3e%3cpath%20clip-path='none'%20d='M-923.716%2021.779c-1.273%200-2.358.926-2.556%202.183l-10.6%2067.216c-.201%201.276.785%202.43%202.077%202.43h15.719l3.903-24.752%204.247-26.936a2.59%202.59%200%200%201%202.556-2.185h22.519c4.098%200%207.836.956%2011.019%202.624.218-11.273-9.084-20.58-21.873-20.58z'%20fill='%23003087'/%3e%3c/g%3e%3c/svg%3e"
+                    alt="paypal logo"/>
+        </div>
+    </div>
+</section>
+
+<section class="relative py-8 lg:py-20 " id="features">
+    <div class="absolute start-[10%] z-0">
+        <div
+                class="pointer-events-none aspect-square w-60 rounded-full bg-gradient-to-r from-primary/10 via-violet-500/10 to-purple-500/10 blur-3xl [transform:translate3d(0,0,0)] lg:w-[600px]"></div>
+    </div>
+
+    <div class="container">
+        <div class="flex flex-col items-center">
+            <h2 class="inline text-4xl font-semibold">Magical Things</h2>
+
+            <p class="mt-4 text-lg sm:text-center">
+                Unlock the Full Potential of Your Business with Our SaaS Platform's Key Features
+            </p>
+        </div>
+
+        <div class="relative z-[2] mt-8 grid gap-8 lg:mt-20 lg:grid-cols-2 lg:gap-12">
+            <div
+                    class="overflow-hidden rounded-lg bg-base-200 shadow-md transition-all hover:shadow-xl">
+                <img
+                        alt="saas img"
+                        class="overflow-hidden rounded-ss-lg"
+                        src="/assets/16232074-Smart-House-UI-OLHTQY_v.png"/>
+            </div>
+
+            <div class="lg:mt-8">
+                <div class="badge badge-primary">Dashboard</div>
+                <h3 class="mt-2 text-3xl font-semibold">Fully Controlled Panel</h3>
+                <p class="mt-2 text-base font-medium">
+                    Elevate control with our dynamic SaaS dashboard—real-time insights, intuitive
+                    navigation, seamless customization.
+                </p>
+
+                <ul class="mt-4 list-inside list-disc text-base">
+                    <li>Real-Time Data Insights</li>
+                    <li>Customizable Widgets</li>
+                    <li>Intuitive User Interface</li>
+                    <li>Performance Metrics at a Glance</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-8 grid gap-8 lg:mt-20 lg:grid-cols-2 lg:gap-12">
+            <div>
+                <div class="badge badge-primary">Control</div>
+                <h3 class="mt-2 text-3xl font-semibold">Managing Entities</h3>
+                <p class="mt-2 text-base">
+                    Our SaaS platform offers seamless management, allowing you to effortlessly oversee
+                    users, projects, and resources in one centralized hub. Gain real-time insights,
+                    streamline workflows, and optimize resource allocation for unparalleled efficiency.
+                </p>
+
+                <ul class="mt-4 list-inside list-disc text-base">
+                    <li>User-Friendly Tools</li>
+                    <li>Resource Management</li>
+                    <li>Task Assignment</li>
+                    <li>Robust Control</li>
+                </ul>
+            </div>
+
+            <div class="order-first lg:order-last">
+                <div
+                        class="overflow-hidden rounded-lg bg-base-200 shadow-md transition-all hover:shadow-xl">
+                    <img
+                            alt="saas img"
+                            class="overflow-hidden rounded-ss-lg"
+                            src="/assets/18580477-Skylight-Mobile-Property-Management-Dashboard-PF7H55iZ.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 grid gap-8 lg:mt-20 lg:grid-cols-2 lg:gap-12">
+            <div
+                    class="overflow-hidden rounded-lg bg-base-200 shadow-md transition-all hover:shadow-xl">
+                <img
+                        alt="saas img"
+                        class="overflow-hidden rounded-ss-lg"
+                        src="/assets/18382537-WorkSpace-Work-Space-Booking-Apps-QfnUo2GQ.png"/>
+            </div>
+
+            <div class="lg:mt-8">
+                <div class="badge badge-primary">Workflows</div>
+                <h3 class="mt-2 text-3xl font-semibold">Seamless Integrations</h3>
+                <p class="mt-2 text-base">
+                    Connect key tools seamlessly with our SaaS platform, streamlining your processes and
+                    boosting productivity. Experience a cohesive digital ecosystem that empowers your
+                    business for innovation and growth.
+                </p>
+
+                <ul class="mt-4 list-inside list-disc text-base">
+                    <li>Real-time chat with Slack</li>
+                    <li>Engage your customer with Email</li>
+                    <li>Getting order from Amazon</li>
+                    <li>Using Ai from OpenAI</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-8 lg:py-20 " id="integrations">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="text-4xl font-semibold">Quick Integrations</h2>
+            <p class="mt-2 text-lg sm:text-center">
+                Effortless Collaboration: Seamlessly integrate tools for unified efficiency with our
+                SaaS platform.
+            </p>
+        </div>
+        <div class="mt-12 rounded-lg bg-base-200 p-8 text-base-content lg:px-24 lg:py-14">
+            <div class="grid items-center gap-8 lg:grid-cols-2">
+                <div class="inline-flex flex-col text-center lg:text-start">
+                    <h3 class="text-3xl font-medium leading-snug">
+                        Effortless expert Saas integrations, just a snap away.
+                    </h3>
+                    <p class="mt-4 text-lg leading-normal">
+                        Elevate efficiency with our SaaS platform's seamless integration feature. Connect
+                        tools effortlessly for a unified digital workspace.
+                    </p>
+
+                    <div class="mt-8 flex justify-center lg:justify-start">
+                        <button class="btn btn-primary">Quick Connect</button>
+                    </div>
+                </div>
+
+                <div class="mt-8 grid grid-cols-2 gap-14 md:grid-cols-3 justify-center">
+                    <div class="text-center">
+                        <div
+                                class="inline-flex h-24 w-24 items-center justify-center rounded-full bg-white shadow">
+                            <img alt="amazon" class="h-12 w-12" src="/assets/amazon-mini-7numKydf.svg"/>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div
+                                class="inline-flex h-24 w-24 items-center justify-center rounded-full bg-white shadow">
+                            <img alt="slack" class="h-12 w-12" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='-2.45%200%202452.5%202452.5'%20enable-background='new%200%200%202447.6%202452.5'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-rule='evenodd'%20fill-rule='evenodd'%3e%3cpath%20d='m897.4%200c-135.3.1-244.8%20109.9-244.7%20245.2-.1%20135.3%20109.5%20245.1%20244.8%20245.2h244.8v-245.1c.1-135.3-109.5-245.1-244.9-245.3.1%200%20.1%200%200%200m0%20654h-652.6c-135.3.1-244.9%20109.9-244.8%20245.2-.2%20135.3%20109.4%20245.1%20244.7%20245.3h652.7c135.3-.1%20244.9-109.9%20244.8-245.2.1-135.4-109.5-245.2-244.8-245.3z'%20fill='%2336c5f0'/%3e%3cpath%20d='m2447.6%20899.2c.1-135.3-109.5-245.1-244.8-245.2-135.3.1-244.9%20109.9-244.8%20245.2v245.3h244.8c135.3-.1%20244.9-109.9%20244.8-245.3zm-652.7%200v-654c.1-135.2-109.4-245-244.7-245.2-135.3.1-244.9%20109.9-244.8%20245.2v654c-.2%20135.3%20109.4%20245.1%20244.7%20245.3%20135.3-.1%20244.9-109.9%20244.8-245.3z'%20fill='%232eb67d'/%3e%3cpath%20d='m1550.1%202452.5c135.3-.1%20244.9-109.9%20244.8-245.2.1-135.3-109.5-245.1-244.8-245.2h-244.8v245.2c-.1%20135.2%20109.5%20245%20244.8%20245.2zm0-654.1h652.7c135.3-.1%20244.9-109.9%20244.8-245.2.2-135.3-109.4-245.1-244.7-245.3h-652.7c-135.3.1-244.9%20109.9-244.8%20245.2-.1%20135.4%20109.4%20245.2%20244.7%20245.3z'%20fill='%23ecb22e'/%3e%3cpath%20d='m0%201553.2c-.1%20135.3%20109.5%20245.1%20244.8%20245.2%20135.3-.1%20244.9-109.9%20244.8-245.2v-245.2h-244.8c-135.3.1-244.9%20109.9-244.8%20245.2zm652.7%200v654c-.2%20135.3%20109.4%20245.1%20244.7%20245.3%20135.3-.1%20244.9-109.9%20244.8-245.2v-653.9c.2-135.3-109.4-245.1-244.7-245.3-135.4%200-244.9%20109.8-244.8%20245.1%200%200%200%20.1%200%200'%20fill='%23e01e5a'/%3e%3c/g%3e%3c/svg%3e"/>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div
+                                class="inline-flex h-24 w-24 items-center justify-center rounded-full bg-white shadow">
+                            <img alt="openai" class="h-12 w-12" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20width='800px'%20height='800px'%20viewBox='0%200%2024%2024'%20role='img'%20xmlns='http://www.w3.org/2000/svg'%3e%3ctitle%3eOpenAI%20icon%3c/title%3e%3cpath%20d='M22.2819%209.8211a5.9847%205.9847%200%200%200-.5157-4.9108%206.0462%206.0462%200%200%200-6.5098-2.9A6.0651%206.0651%200%200%200%204.9807%204.1818a5.9847%205.9847%200%200%200-3.9977%202.9%206.0462%206.0462%200%200%200%20.7427%207.0966%205.98%205.98%200%200%200%20.511%204.9107%206.051%206.051%200%200%200%206.5146%202.9001A5.9847%205.9847%200%200%200%2013.2599%2024a6.0557%206.0557%200%200%200%205.7718-4.2058%205.9894%205.9894%200%200%200%203.9977-2.9001%206.0557%206.0557%200%200%200-.7475-7.0729zm-9.022%2012.6081a4.4755%204.4755%200%200%201-2.8764-1.0408l.1419-.0804%204.7783-2.7582a.7948.7948%200%200%200%20.3927-.6813v-6.7369l2.02%201.1686a.071.071%200%200%201%20.038.052v5.5826a4.504%204.504%200%200%201-4.4945%204.4944zm-9.6607-4.1254a4.4708%204.4708%200%200%201-.5346-3.0137l.142.0852%204.783%202.7582a.7712.7712%200%200%200%20.7806%200l5.8428-3.3685v2.3324a.0804.0804%200%200%201-.0332.0615L9.74%2019.9502a4.4992%204.4992%200%200%201-6.1408-1.6464zM2.3408%207.8956a4.485%204.485%200%200%201%202.3655-1.9728V11.6a.7664.7664%200%200%200%20.3879.6765l5.8144%203.3543-2.0201%201.1685a.0757.0757%200%200%201-.071%200l-4.8303-2.7865A4.504%204.504%200%200%201%202.3408%207.872zm16.5963%203.8558L13.1038%208.364%2015.1192%207.2a.0757.0757%200%200%201%20.071%200l4.8303%202.7913a4.4944%204.4944%200%200%201-.6765%208.1042v-5.6772a.79.79%200%200%200-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759%200%200%200-.7854%200L9.409%209.2297V6.8974a.0662.0662%200%200%201%20.0284-.0615l4.8303-2.7866a4.4992%204.4992%200%200%201%206.6802%204.66zM8.3065%2012.863l-2.02-1.1638a.0804.0804%200%200%201-.038-.0567V6.0742a4.4992%204.4992%200%200%201%207.3757-3.4537l-.142.0805L8.704%205.459a.7948.7948%200%200%200-.3927.6813zm1.0976-2.3654l2.602-1.4998%202.6069%201.4998v2.9994l-2.5974%201.4997-2.6067-1.4997Z'/%3e%3c/svg%3e"/>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div
+                                class="inline-flex h-24 w-24 items-center justify-center rounded-full bg-white shadow">
+                            <img alt="meta" class="h-12 w-12" src="data:image/svg+xml,%3csvg%20width='288'%20height='191'%20viewBox='0%200%20288%20191'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_424_7)'%3e%3cpath%20d='M31.06%20125.96C31.06%20136.94%2033.47%20145.37%2036.62%20150.47C40.75%20157.15%2046.91%20159.98%2053.19%20159.98C61.29%20159.98%2068.7%20157.97%2082.98%20138.22C94.42%20122.39%20107.9%20100.17%20116.97%2086.24L132.33%2062.64C143%2046.25%20155.35%2028.03%20169.51%2015.68C181.07%205.6%20193.54%200%20206.09%200C227.16%200%20247.23%2012.21%20262.59%2035.11C279.4%2060.19%20287.56%2091.78%20287.56%20124.38C287.56%20143.76%20283.74%20158%20277.24%20169.25C270.96%20180.13%20258.72%20191%20238.13%20191V159.98C255.76%20159.98%20260.16%20143.78%20260.16%20125.24C260.16%2098.82%20254%2069.5%20240.43%2048.55C230.8%2033.69%20218.32%2024.61%20204.59%2024.61C189.74%2024.61%20177.79%2035.81%20164.36%2055.78C157.22%2066.39%20149.89%2079.32%20141.66%2093.91L132.6%20109.96C114.4%20142.23%20109.79%20149.58%20100.69%20161.71C84.74%20182.95%2071.12%20191%2053.19%20191C31.92%20191%2018.47%20181.79%2010.14%20167.91C3.34%20156.6%200%20141.76%200%20124.85L31.06%20125.96Z'%20fill='%230081FB'/%3e%3cpath%20d='M24.49%2037.3C38.73%2015.35%2059.28%200%2082.85%200C96.5%200%20110.07%204.04%20124.24%2015.61C139.74%2028.26%20156.26%2049.09%20176.87%2083.42L184.26%2095.74C202.1%20125.46%20212.25%20140.75%20218.19%20147.96C225.83%20157.22%20231.18%20159.98%20238.13%20159.98C255.76%20159.98%20260.16%20143.78%20260.16%20125.24L287.56%20124.38C287.56%20143.76%20283.74%20158%20277.24%20169.25C270.96%20180.13%20258.72%20191%20238.13%20191C225.33%20191%20213.99%20188.22%20201.45%20176.39C191.81%20167.31%20180.54%20151.18%20171.87%20136.68L146.08%2093.6C133.14%2071.98%20121.27%2055.86%20114.4%2048.56C107.01%2040.71%2097.51%2031.23%2082.35%2031.23C70.08%2031.23%2059.66%2039.84%2050.94%2053.01L24.49%2037.3Z'%20fill='url(%23paint0_linear_424_7)'/%3e%3cpath%20d='M82.35%2031.23C70.08%2031.23%2059.66%2039.84%2050.94%2053.01C38.61%2071.62%2031.06%2099.34%2031.06%20125.96C31.06%20136.94%2033.47%20145.37%2036.62%20150.47L10.14%20167.91C3.34%20156.6%200%20141.76%200%20124.85C0%2094.1%208.44%2062.05%2024.49%2037.3C38.73%2015.35%2059.28%200%2082.85%200L82.35%2031.23Z'%20fill='url(%23paint1_linear_424_7)'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_424_7'%20x1='61'%20y1='117'%20x2='259'%20y2='127'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%230064E1'/%3e%3cstop%20offset='0.4'%20stop-color='%230064E1'/%3e%3cstop%20offset='0.83'%20stop-color='%230073EE'/%3e%3cstop%20offset='1'%20stop-color='%230082FB'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_424_7'%20x1='45'%20y1='139'%20x2='45'%20y2='66'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%230082FB'/%3e%3cstop%20offset='1'%20stop-color='%230064E0'/%3e%3c/linearGradient%3e%3cclipPath%20id='clip0_424_7'%3e%3crect%20width='288'%20height='191'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"/>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div
+                                class="inline-flex h-24 w-24 items-center justify-center rounded-full bg-white shadow">
+                            <img alt="whatsapp" class="h-12 w-12" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M16%2031C23.732%2031%2030%2024.732%2030%2017C30%209.26801%2023.732%203%2016%203C8.26801%203%202%209.26801%202%2017C2%2019.5109%202.661%2021.8674%203.81847%2023.905L2%2031L9.31486%2029.3038C11.3014%2030.3854%2013.5789%2031%2016%2031ZM16%2028.8462C22.5425%2028.8462%2027.8462%2023.5425%2027.8462%2017C27.8462%2010.4576%2022.5425%205.15385%2016%205.15385C9.45755%205.15385%204.15385%2010.4576%204.15385%2017C4.15385%2019.5261%204.9445%2021.8675%206.29184%2023.7902L5.23077%2027.7692L9.27993%2026.7569C11.1894%2028.0746%2013.5046%2028.8462%2016%2028.8462Z'%20fill='%23BFC8D0'/%3e%3cpath%20d='M28%2016C28%2022.6274%2022.6274%2028%2016%2028C13.4722%2028%2011.1269%2027.2184%209.19266%2025.8837L5.09091%2026.9091L6.16576%2022.8784C4.80092%2020.9307%204%2018.5589%204%2016C4%209.37258%209.37258%204%2016%204C22.6274%204%2028%209.37258%2028%2016Z'%20fill='url(%23paint0_linear_87_7264)'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M16%2030C23.732%2030%2030%2023.732%2030%2016C30%208.26801%2023.732%202%2016%202C8.26801%202%202%208.26801%202%2016C2%2018.5109%202.661%2020.8674%203.81847%2022.905L2%2030L9.31486%2028.3038C11.3014%2029.3854%2013.5789%2030%2016%2030ZM16%2027.8462C22.5425%2027.8462%2027.8462%2022.5425%2027.8462%2016C27.8462%209.45755%2022.5425%204.15385%2016%204.15385C9.45755%204.15385%204.15385%209.45755%204.15385%2016C4.15385%2018.5261%204.9445%2020.8675%206.29184%2022.7902L5.23077%2026.7692L9.27993%2025.7569C11.1894%2027.0746%2013.5046%2027.8462%2016%2027.8462Z'%20fill='white'/%3e%3cpath%20d='M12.5%209.49989C12.1672%208.83131%2011.6565%208.8905%2011.1407%208.8905C10.2188%208.8905%208.78125%209.99478%208.78125%2012.05C8.78125%2013.7343%209.52345%2015.578%2012.0244%2018.3361C14.438%2020.9979%2017.6094%2022.3748%2020.2422%2022.3279C22.875%2022.2811%2023.4167%2020.0154%2023.4167%2019.2503C23.4167%2018.9112%2023.2062%2018.742%2023.0613%2018.696C22.1641%2018.2654%2020.5093%2017.4631%2020.1328%2017.3124C19.7563%2017.1617%2019.5597%2017.3656%2019.4375%2017.4765C19.0961%2017.8018%2018.4193%2018.7608%2018.1875%2018.9765C17.9558%2019.1922%2017.6103%2019.083%2017.4665%2019.0015C16.9374%2018.7892%2015.5029%2018.1511%2014.3595%2017.0426C12.9453%2015.6718%2012.8623%2015.2001%2012.5959%2014.7803C12.3828%2014.4444%2012.5392%2014.2384%2012.6172%2014.1483C12.9219%2013.7968%2013.3426%2013.254%2013.5313%2012.9843C13.7199%2012.7145%2013.5702%2012.305%2013.4803%2012.05C13.0938%2010.953%2012.7663%2010.0347%2012.5%209.49989Z'%20fill='white'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_87_7264'%20x1='26.5'%20y1='7'%20x2='4'%20y2='28'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%235BD066'/%3e%3cstop%20offset='1'%20stop-color='%2327B43E'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"/>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div
+                                class="inline-flex h-24 w-24 items-center justify-center rounded-full bg-white shadow">
+                            <img alt="x" class="h-12 w-12" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20width='300'%20height='271'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='m236%200h46l-101%20115%20118%20156h-92.6l-72.5-94.8-83%2094.8h-46l107-123-113-148h94.9l65.5%2086.6zm-16.1%20244h25.5l-165-218h-27.4z'/%3e%3c/svg%3e"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 grid gap-6 lg:grid-cols-3">
+            <div
+                    class="card cursor-pointer border border-base-content/10 p-6 transition-all hover:shadow">
+                <div class="flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="flex h-16 w-16 items-center justify-center rounded-full bg-base-200">
+                            <img alt="slack" class="h-8 w-8" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='-2.45%200%202452.5%202452.5'%20enable-background='new%200%200%202447.6%202452.5'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-rule='evenodd'%20fill-rule='evenodd'%3e%3cpath%20d='m897.4%200c-135.3.1-244.8%20109.9-244.7%20245.2-.1%20135.3%20109.5%20245.1%20244.8%20245.2h244.8v-245.1c.1-135.3-109.5-245.1-244.9-245.3.1%200%20.1%200%200%200m0%20654h-652.6c-135.3.1-244.9%20109.9-244.8%20245.2-.2%20135.3%20109.4%20245.1%20244.7%20245.3h652.7c135.3-.1%20244.9-109.9%20244.8-245.2.1-135.4-109.5-245.2-244.8-245.3z'%20fill='%2336c5f0'/%3e%3cpath%20d='m2447.6%20899.2c.1-135.3-109.5-245.1-244.8-245.2-135.3.1-244.9%20109.9-244.8%20245.2v245.3h244.8c135.3-.1%20244.9-109.9%20244.8-245.3zm-652.7%200v-654c.1-135.2-109.4-245-244.7-245.2-135.3.1-244.9%20109.9-244.8%20245.2v654c-.2%20135.3%20109.4%20245.1%20244.7%20245.3%20135.3-.1%20244.9-109.9%20244.8-245.3z'%20fill='%232eb67d'/%3e%3cpath%20d='m1550.1%202452.5c135.3-.1%20244.9-109.9%20244.8-245.2.1-135.3-109.5-245.1-244.8-245.2h-244.8v245.2c-.1%20135.2%20109.5%20245%20244.8%20245.2zm0-654.1h652.7c135.3-.1%20244.9-109.9%20244.8-245.2.2-135.3-109.4-245.1-244.7-245.3h-652.7c-135.3.1-244.9%20109.9-244.8%20245.2-.1%20135.4%20109.4%20245.2%20244.7%20245.3z'%20fill='%23ecb22e'/%3e%3cpath%20d='m0%201553.2c-.1%20135.3%20109.5%20245.1%20244.8%20245.2%20135.3-.1%20244.9-109.9%20244.8-245.2v-245.2h-244.8c-135.3.1-244.9%20109.9-244.8%20245.2zm652.7%200v654c-.2%20135.3%20109.4%20245.1%20244.7%20245.3%20135.3-.1%20244.9-109.9%20244.8-245.2v-653.9c.2-135.3-109.4-245.1-244.7-245.3-135.4%200-244.9%20109.8-244.8%20245.1%200%200%200%20.1%200%200'%20fill='%23e01e5a'/%3e%3c/g%3e%3c/svg%3e"/>
+                        </div>
+                        <h3 class="text-xl font-semibold">Slack</h3>
+                    </div>
+                    <button class="btn btn-circle" aria-label="Details">
+                        <i class="icon-arrow-right text-2xl"></i>
+                    </button>
+                </div>
+                <p class="mt-4">
+                    Streamline project discussions, share updates, and boost real-time collaboration
+                    effortlessly.
+                </p>
+            </div>
+
+            <div
+                    class="card cursor-pointer border border-base-content/10 p-6 transition-all hover:shadow">
+                <div class="flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="flex h-16 w-16 items-center justify-center rounded-full bg-base-200">
+                            <img alt="google drive" class="h-8 w-8" src="data:image/svg+xml,%3csvg%20viewBox='0%200%2087.3%2078'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='m6.6%2066.85%203.85%206.65c.8%201.4%201.95%202.5%203.3%203.3l13.75-23.8h-27.5c0%201.55.4%203.1%201.2%204.5z'%20fill='%230066da'/%3e%3cpath%20d='m43.65%2025-13.75-23.8c-1.35.8-2.5%201.9-3.3%203.3l-25.4%2044a9.06%209.06%200%200%200%20-1.2%204.5h27.5z'%20fill='%2300ac47'/%3e%3cpath%20d='m73.55%2076.8c1.35-.8%202.5-1.9%203.3-3.3l1.6-2.75%207.65-13.25c.8-1.4%201.2-2.95%201.2-4.5h-27.502l5.852%2011.5z'%20fill='%23ea4335'/%3e%3cpath%20d='m43.65%2025%2013.75-23.8c-1.35-.8-2.9-1.2-4.5-1.2h-18.5c-1.6%200-3.15.45-4.5%201.2z'%20fill='%2300832d'/%3e%3cpath%20d='m59.8%2053h-32.3l-13.75%2023.8c1.35.8%202.9%201.2%204.5%201.2h50.8c1.6%200%203.15-.45%204.5-1.2z'%20fill='%232684fc'/%3e%3cpath%20d='m73.4%2026.5-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75%2023.8%2016.15%2028h27.45c0-1.55-.4-3.1-1.2-4.5z'%20fill='%23ffba00'/%3e%3c/svg%3e"/>
+                        </div>
+                        <h3 class="text-xl font-semibold">Google Drive</h3>
+                    </div>
+                    <button class="btn btn-circle" aria-label="Details">
+                        <i class="icon-arrow-right text-2xl"></i>
+                    </button>
+                </div>
+
+                <p class="mt-4">
+                    File management, Enhance collaboration, and Elevate your productivity with the
+                    convenience of this integrated solution
+                </p>
+            </div>
+
+            <div
+                    class="card cursor-pointer border border-base-content/10 p-6 transition-all hover:shadow">
+                <div class="flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="flex h-16 w-16 items-center justify-center rounded-full bg-base-200">
+                            <img
+                                    alt="bitbucket"
+                                    class="h-8 w-8"
+                                    src="data:image/svg+xml,%3csvg%20width='86'%20height='77'%20viewBox='0%200%2086%2077'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_425_14)'%3e%3cpath%20d='M2.72692%200.242414C2.32895%200.237282%201.93469%200.319325%201.57181%200.482781C1.20893%200.646237%200.88623%200.887143%200.626364%201.18859C0.366497%201.49003%200.175766%201.84471%200.0675603%202.22771C-0.040645%202.61072%20-0.0637009%203.01276%201.13278e-05%203.40562L11.5757%2073.678C11.7199%2074.5379%2012.1626%2075.3195%2012.8258%2075.8855C13.4891%2076.4516%2014.3306%2076.7658%2015.2025%2076.773H70.7359C71.3895%2076.7814%2072.0244%2076.5548%2072.5249%2076.1343C73.0254%2075.7139%2073.3583%2075.1276%2073.4628%2074.4824L85.0658%203.43289C85.1295%203.04003%2085.1065%202.63798%2084.9983%202.25498C84.89%201.87198%2084.6993%201.5173%2084.4394%201.21586C84.1796%200.914413%2083.8569%200.673506%2083.494%200.51005C83.1311%200.346594%2082.7369%200.264551%2082.3389%200.269684L2.72692%200.242414ZM51.4703%2051.031H33.7455L28.9461%2025.9708H55.7652L51.4703%2051.031Z'%20fill='%232684FF'/%3e%3cpath%20d='M81.3571%2025.9707H55.7652L51.4703%2051.031H33.7454L12.8164%2075.8867C13.4798%2076.4603%2014.3255%2076.7793%2015.2024%2076.7866H70.7495C71.4031%2076.795%2072.038%2076.5683%2072.5385%2076.1479C73.039%2075.7275%2073.3719%2075.1412%2073.4764%2074.496L81.3571%2025.9707Z'%20fill='url(%23paint0_linear_425_14)'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_425_14'%20x1='87.2745'%20y1='32.9788'%20x2='44.9802'%20y2='66.0017'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20offset='0.18'%20stop-color='%230052CC'/%3e%3cstop%20offset='1'%20stop-color='%232684FF'/%3e%3c/linearGradient%3e%3cclipPath%20id='clip0_425_14'%3e%3crect%20width='86'%20height='77'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"/>
+                        </div>
+                        <h3 class="text-xl font-semibold">Bitbucket</h3>
+                    </div>
+                    <button class="btn btn-circle" aria-label="Details">
+                        <i class="icon-arrow-right text-2xl"></i>
+                    </button>
+                </div>
+
+                <p class="mt-4">
+                    Streamline version control, collaboration, and project management with ease. Embrace
+                    the power of seamless GitHub integration.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section
+        class="py-8 lg:py-20"
+        id="pricing">
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl sm:text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simple predictable pricing</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">You'll be billed $10 USD per month for each VM you create via ShapeBlock.</p>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+      <div class="p-8 sm:p-10 lg:flex-auto">
+        <div class="mt-10 flex items-center gap-x-4">
+          <h4 class="flex-none text-sm font-semibold leading-6 text-indigo-600">What’s included</h4>
+          <div class="h-px flex-auto bg-gray-100"></div>
+        </div>
+        <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+            </svg>
+            Deploy your app in your infrastructure
+          </li>
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+            </svg>
+            Granular access to teams
+          </li>
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+            </svg>
+            Unlimited clusters, members, projects and applications
+          </li>
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+            </svg>
+            Best effort support
+          </li>
+        </ul>
+      </div>
+      <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+        <div class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+          <div class="mx-auto max-w-xs px-8">
+            <p class="text-base font-semibold text-gray-600">Monthly</p>
+            <p class="mt-6 flex items-baseline justify-center gap-x-2">
+              <span class="text-5xl font-bold tracking-tight text-gray-900">$10</span>
+              <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD per VM</span>
+            </p>
+            <a href="https://platform.shapeblock.com/accounts/signup/" class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign up now</a>
+            <p class="mt-6 text-xs leading-5 text-gray-600">Payments are handled by Stripe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="py-8 lg:py-20 " id="faq">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="text-4xl font-semibold text-base-content">FAQs</h2>
+            <p class="mt-2 text-lg">
+                Find solutions, tips, and more to enhance your SaaS experience.
+            </p>
+        </div>
+
+        <div class="mt-12 flex justify-center gap-6">
+            <div class="space-y-4 lg:w-1/2">
+                <div class="collapse collapse-arrow border border-base-content/10">
+                    <input checked="checked" name="faq" type="radio" aria-label="open/close"/>
+                    <div class="collapse-title text-xl font-medium">
+                        How does SaaS benefit my business?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-base">
+                            SaaS offers several advantages, including cost-effectiveness, scalability,
+                            automatic updates, and accessibility. It allows businesses to focus on core
+                            operations while the software provider handles maintenance and updates.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow border border-base-content/10">
+                    <input name="faq" type="radio" aria-label="open/close"/>
+                    <div class="collapse-title text-xl font-medium">
+                        What features are included in your SaaS platform?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-base">
+                            Our SaaS platform offers a range of features, including collaborative tools,
+                            real-time analytics, integrations with popular applications, user-friendly
+                            interfaces, and customizable solutions tailored to your business needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow border border-base-content/10">
+                    <input name="faq" type="radio" aria-label="open/close"/>
+                    <div class="collapse-title text-xl font-medium">How can I upgrade my plan?</div>
+                    <div class="collapse-content">
+                        <p class="text-base">
+                            Upgrading your plan is easy. Log in to your account, go to the billing section,
+                            and choose the plan that suits your business requirements. The upgrade will take
+                            effect immediately.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow border border-base-content/10">
+                    <input name="faq" type="radio" aria-label="open/close"/>
+                    <div class="collapse-title text-xl font-medium">
+                        Is there a trial period for your SaaS platform?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-base">
+                            Yes, we offer a free trial period for you to explore and experience our platform's
+                            features. No credit card is required during the trial period.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow border border-base-content/10">
+                    <input name="faq" type="radio" aria-label="open/close"/>
+                    <div class="collapse-title text-xl font-medium">
+                        How is data security handled on your platform?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-base">
+                            We prioritize data security. Our platform employs encryption, access controls, and
+                            regular security audits to safeguard your data. We comply with industry standards
+                            to ensure your information is secure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-neutral text-neutral-content" data-theme="dark">
+  <div class="border-t border-white/20 px-8 py-4 text-center lg:px-40">
+    🌼 Made with
+    <a class="link-hover link" href="https://daisyui.com" target="_blank">daisyUI</a>
+  </div>
+</footer>
+</body>
+</html>
