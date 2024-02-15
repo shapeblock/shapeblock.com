@@ -7,7 +7,7 @@
 <body>
 {{> topbar}}
 
-<section class="py-8 lg:py-20  " id="home">
+<section class="py-4 lg:py-20  " id="home">
     <div class="container">
         <div class="mx-auto">
             <div class="text-center">
@@ -29,37 +29,9 @@
     </div>
 </section>
 
-<section class="relative py-8 lg:py-20 " id="features">
-    <div class="absolute start-[10%] z-0">
-        <div
-                class="pointer-events-none aspect-square w-60 rounded-full bg-gradient-to-r from-primary/10 via-violet-500/10 to-purple-500/10 blur-3xl [transform:translate3d(0,0,0)] lg:w-[600px]"></div>
-    </div>
-
+<section class="relative py-4 lg:py-20 " id="features">
     <div class="container">
         <div class="relative z-[2] mt-8 grid gap-8 lg:mt-20 lg:grid-cols-2 lg:gap-12">
-            <div
-                    class="overflow-hidden bg-base-200 shadow-md transition-all hover:shadow-xl">
-                <img
-                        alt="saas img"
-                        class="overflow-hidden rounded-ss-lg"
-                        src="assets/images/provision.png"/>
-            </div>
-
-            <div class="lg:mt-8">
-                <h3 class="mt-2 text-3xl font-semibold">Works with your favorite cloud</h3>
-                <p class="mt-2 text-base font-medium">
-                    Supports Digitalocean, Linode and AWS, with more in the pipeline.
-                </p>
-
-                <ul class="mt-4 list-inside list-disc text-base">
-                    <li>Provide your cloud keys</li>
-                    <li>Spin up VMs in your cloud</li>
-                    <li>Deploy your applications in minutes</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="mt-8 grid gap-8 lg:mt-20 lg:grid-cols-2 lg:gap-12">
             <div>
                 <h3 class="mt-2 text-3xl font-semibold">Focus on code, not on infrastructure</h3>
                 <p class="mt-2 text-base">
@@ -68,11 +40,10 @@
                 </p>
 
                 <ul class="mt-4 list-inside list-disc text-base">
-                    <li><code>git push</code> deploys your code to production</li>
-                    <li>Build and deploy applications faster</li>
-                    <li>Get best-in-class features like scaling, atomatic TLS certs, logging and Continuous Delivery baked into your workflow.</li>
-                    <li>Runs your favorite stack: Django, Rails, Express.js, Laravel, Drupal, Flask, React, Angular, with more being added.</li>
-                    <li>Runs almost all popular databases: MySQL, PostgreSQL, MongoDB.</li>
+                    <li><b>git push</b> deploys your code to production</li>
+                    <li><b>best-in-class features</b> like scaling, atomatic TLS and logging baked into your workflow.</li>
+                    <li>Runs your <b>favorite stack</b>. Django, Rails, Express.js, Laravel, Drupal, Flask, React, Angular, with more being added.</li>
+                    <li>Runs almost all <b>popular databases.</b> MySQL, PostgreSQL, MongoDB, Redis.</li>
                 </ul>
             </div>
 
@@ -104,12 +75,37 @@
                 </p>
 
                 <ul class="mt-4 list-inside list-disc text-base">
-                    <li>ShapeBlock is built on 100% open standards. You are not locked in by any proprietary tools. Your applications will run even if (godforbid) I get hit by a bus :D</li>
-                    <li>Reduce infra costs: Running your app on a PaaS can be expensive, especially if you use a host of other third party services to support it.</li>
-                    <li>Industry standards: All industry best practices and access control policies are applied to your cluster and infrastructure automatically.</li>
+                    <li><b>ShapeBlock is built on 100% open standards.</b> You are not locked in by any proprietary tools. Your applications will run even if (godforbid) I get hit by a bus :D</li>
+                    <li><b>Reduce infra costs.</b> Running your app on a PaaS can be expensive, especially if you use a host of other third party services to support it.</li>
+                    <li><b>Industry standards.</b> All industry best practices and access control policies are applied to your cluster and infrastructure automatically.</li>
                 </ul>
             </div>
         </div>
+
+        <div class="mt-8 grid gap-8 lg:mt-20 lg:grid-cols-2 lg:gap-12">
+            <div class="lg:mt-8">
+                <h3 class="mt-2 text-3xl font-semibold">Works with your favorite cloud</h3>
+                <p class="mt-2 text-base font-medium">
+                    Supports Digitalocean, Linode and AWS, with more in the pipeline.
+                </p>
+
+                <ul class="mt-4 list-inside list-disc text-base">
+                    <li>Provide your cloud keys</li>
+                    <li>Spin up VMs in your cloud</li>
+                    <li>Deploy your applications <b>in minutes</b></li>
+                </ul>
+            </div>
+
+            <div
+                    class="overflow-hidden bg-base-200 shadow-md transition-all hover:shadow-xl">
+                <img
+                        alt="saas img"
+                        class="overflow-hidden rounded-ss-lg"
+                        src="assets/images/provision.png"/>
+            </div>
+
+        </div>
+
     </div>
 </section>
 
@@ -118,58 +114,95 @@
         id="pricing">
 <div class="py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl sm:text-center">
+    <div class="mx-auto max-w-2xl sm:text-center mb-4">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simple predictable pricing</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">You'll be billed $7 USD per month for each VM you create via ShapeBlock.</p>
     </div>
-    <div class="mx-auto mt-16 max-w-2xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-      <div class="p-8 sm:p-10 lg:flex-auto">
-        <div class="mt-10 flex items-center gap-x-4">
-          <h4 class="flex-none text-lg font-semibold leading-6">What’s included</h4>
-          <div class="h-px flex-auto bg-gray-100"></div>
-        </div>
-        <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-            </svg>
-            Deploy your app in your infrastructure
-          </li>
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-            </svg>
-            Granular permissions and access to clusters
-          </li>
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-            </svg>
-            Unlimited clusters, members, projects and applications
-          </li>
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-            </svg>
-            Best effort support
-          </li>
-        </ul>
-      </div>
-      <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-        <div class=" bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-          <div class="mx-auto max-w-xs px-8">
-            <p class="text-base font-semibold text-gray-600">Monthly</p>
-            <p class="my-6 flex items-baseline justify-center gap-x-2">
-              <span class="text-5xl font-bold tracking-tight text-gray-900">$7</span>
-              <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD per VM</span>
-            </p>
-            <a href="https://platform.shapeblock.com/accounts/signup/" class="btn btn-primary btn-lg">Sign up now</a>
-            <p class="mt-6 text-xs leading-5 text-gray-600">No credit card required</p>
-            <p class="mt-6 text-xs leading-5 text-gray-600">Plan comes with a 15-day trial period</p>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2">
+            <div class="flex flex-col justify-between bg-white p-8 ring-1 ring-gray-900/10 sm:p-10">
+                <div>
+                  <h3 id="free-tier" class="text-base font-semibold leading-7 text-indigo-600">Free tier</h3>
+                  <div class="mt-4 flex items-baseline gap-x-2">
+                    <span class="text-5xl font-bold tracking-tight text-gray-900">$0</span>
+                    <span class="text-base font-semibold leading-7 text-gray-600">/month</span>
+                  </div>
+                  <p class="mt-6 text-base leading-7 text-gray-600">Free forever plan. Bring your own infra, deploy 1 app.</p>
+                  <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-gray-600">
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+</svg>
+                        1 cluster with 1 node
+                      </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+</svg>
+                        1 app
+                      </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+</svg>
+                        upto 2 services
+                      </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+</svg>
+                        best effort support
+                      </li>
+
+                  </ul>
+                </div>
+                <a href="https://platform.shapeblock.com/accounts/signup/" aria-describedby="tier-hobby" class="btn btn-primary btn-lg">Get started today</a>
+              </div>
+            <div class="flex flex-col justify-between bg-white p-8 ring-1 ring-gray-900/10 sm:p-10">
+                <div>
+                  <h3 id="premium-tier" class="text-base font-semibold leading-7 text-indigo-600">Premium</h3>
+                  <div class="mt-4 flex items-baseline gap-x-2">
+                    <span class="text-5xl font-bold tracking-tight text-gray-900">$7</span>
+                    <span class="text-base font-semibold leading-7 text-gray-600">/month</span>
+                    <span class="text-base font-semibold leading-7 text-gray-600">/VM</span>
+                  </div>
+                  <p class="mt-6 text-base leading-7 text-gray-600">Deploy unlimited apps, work with your team.</p>
+                  <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-gray-600">
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+</svg>
+                        Unlimited clusters
+                      </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+</svg>
+                        Unlimited apps
+                      </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+</svg>
+                        Unlimited services
+                      </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+</svg>
+                        Teams
+                      </li>
+                    <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+</svg>
+                        email support
+                      </li>
+
+                  </ul>
+                </div>
+                <a href="https://platform.shapeblock.com/accounts/signup/" aria-describedby="tier-team" class="btn btn-primary btn-lg">Get started today</a>
+              </div>
+
   </div>
 </div>
 </section>
